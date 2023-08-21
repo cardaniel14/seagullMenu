@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Salmon Breeze",
+        "ingredients": "Brioche bread with smoked salmon, cream cheese with dill, cucumber, red onion, spinach",
+        "price": 8.50,
+        "img": "imagenes/salmon.jpg"
+    },
+    {
+        "name": "Smoothie Bowl",
+        "ingredients": "Açaí and banana puré, homemade granola, fruits, coconut chips and chia",
+        "price": 8.50,
+        "img": "imagenes/smoothie.jpg"
+    },
+    {
+        "name": "Fritters & Smashed",
+        "ingredients": "Poached egg, cheesy corn fritters, beet hummus, sweet chili sauce",
+        "price": 10,
+        "img": "imagenes/fritters.jpg"
+    },
+    {
+        "name": "Avocado Toast",
+        "ingredients": "Toast with avocado with veggie zucchini sauce, feta cheese, nuts and salad",
+        "price": 9,
+        "img": "imagenes/avotoast.jpg"
+    },
+    {
+        "name": "Breakfast Burger",
+        "ingredients": "Brioche bun, scrambled eggs, bacon, cheese, caramelized onion, tomato, avocado, cheese sauce",
+        "price": 10,
+        "img": "imagenes/bb.jpg"
+    },
+    {
+        "name": "Salty Pancakes",
+        "ingredients": "Poached egg, pancakes, smashed avocado, asparagus and cheese sauce",
+        "price": 10,
+        "img": "imagenes/salty.jpg"
+    },
+    {
+        "name": "Jesus Mushrooms",
+        "ingredients": "French toast, poached eggs, fried mushrooms with onion, sun dried tomato, mushroom creamy sauce and dijon sauce",
+        "price": 10,
+        "img": "imagenes/jesus.jpg"
+    },
+    {
+        "name": "Holy Tortilla",
+        "ingredients": "Scrambled eggs with potatoes, bacon or mushrooms, red onion, avocado sauce, smoked paprika, coriander",
+        "price": 9,
+        "img": "imagenes/tortila.jpg"
+    },
+    {
+        "name": "Friday Morning",
+        "ingredients": "Scrambled eggs, french toast, bacon or halloumi cheese, avocado, marinated onion, granola + yogurt on the side",
+        "price": 12.5,
+        "img": "imagenes/fm.jpg"
+    },
+    {
+        "name": "Hey Salmon!",
+        "ingredients": "Poached eggs, smoked salmon, avocado, cheese sauce, avocado and yogurt sauce, marinated onion",
+        "price": 13,
+        "img": "imagenes/fritters.jpg"
+    }
+
+]
