@@ -59,13 +59,17 @@ footer{
     color: blanchedalmond;
 }
 
-#carouselExample {
+/* #carouselExample {
     border-radius: 15px;
 }
   
 #carouselExample .carousel-inner .carousel-item img {
-    max-width: 200px; 
-    border-radius: 10px; 
+    /* max-width: 200px;  */
+    /* border-radius: 10px;  */
+/* } */
+
+#sliderImg{
+    width: 200px;
 }
  
 @media screen and (min-width: 992px){
