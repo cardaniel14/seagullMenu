@@ -3,7 +3,7 @@
         "name": "Salmon Breeze",
         "ingredients": "Brioche bread with smoked salmon, cream cheese with dill, cucumber, red onion, spinach",
         "price": 8.50,
-        "img": "imagenes/salmon.jpg"
+        "img": "imagenes/salmon.jpg"        
     },
     {
         "name": "Smoothie Bowl",
