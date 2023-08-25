@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Mac & Cheese",
+        "ingredients": "Pasta with cheese, onion and cream",
+        "price": 7,
+        "img": "imagenes/mcncheese.jpg"        
+    },
+    {
+        "name": "Crispy Hashbrowns",
+        "ingredients": "Sweet potato hashbrowns with parmesan, avocado yogurt sauce, chili oil, coriander, sesame seeds",
+        "price": 8.50,
+        "img": "imagenes/hashbrowns.jpg"
+    },
+    {
+        "name": "Chicken Jerry Salad",
+        "ingredients": "Spicy chicken, salad mix, mango, avocado, mango dressing, smoked paprika.",
+        "price": 12,
+        "img": "imagenes/chickensalad.jpg"
+    },
+    {
+        "name": "Fish & Chips",
+        "ingredients": "Fried fish with tartar sauce, french fries, lemon, marinated onion, pickles, sweet chili sauce",
+        "price": 12,
+        "img": "imagenes/fishnchips.jpg"
+    },
+    {
+        "name": "Salmon Tom Salad",
+        "ingredients": "Brioche bun, scrambled eggs, bacon, cheese, caramelized onion, tomato, avocado, cheese sauce",
+        "price": 10,
+        "img": "imagenes/salmonsalad.jpg"
+    }
+]

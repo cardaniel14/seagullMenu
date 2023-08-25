@@ -5,17 +5,17 @@ window.addEventListener("load", ()=>{
 
 let jsonData; // Variable para almacenar el JSON cargado
 
-fetch('breakfast.json')
+fetch('lunch.json')
   .then(response => response.json())
   .then(data => {
-    breakfast = data; 
-    sectionBreakFast()
+    lunch = data; 
+    sectionLunch()
 
   })    
     
-function sectionBreakFast(){
+function sectionLunch(){
   const cardSelector = document.getElementById("card-selector");
-      breakfast.forEach(result => {
+      lunch.forEach(result => {
         console.log(result);
         let card = `
                       <img class="photoPlate mx-auto d-block" src="${result.img}">
@@ -30,6 +30,3 @@ function sectionBreakFast(){
         cardSelector.appendChild(containerDiv);
       });
 }
-
-
-
