@@ -1,39 +1,19 @@
+let loader = document.querySelector(".loader");
+window.addEventListener("load", ()=>{
+    loader.classList.toggle("loader2")
+});
+
 let jsonData; // Variable para almacenar el JSON cargado
 
 fetch('platos.json')
   .then(response => response.json())
   .then(data => {
     breakfast = data; 
-    prueba()
+    sectionBreakFast()
 
   })    
     
-// function prueba(){
-//   breakfast.forEach(e => {
-//     let div = document.querySelector(".platos");
-//     let h2 = document.createElement("h2");
-//     let photo = document.createElement("img");
-//     let ingredients = document.createElement("p");
-//     let price = document.createElement("p");
-//     price.className="price";
-//     price.textContent=`${e.price}€`;
-//     ingredients.textContent = e.ingredients;
-//     ingredients.className="ingredients";
-    
-//     h2.textContent=e.name;
-//     h2.className="plateName"
-//     photo.className="photoPlate"
-//     photo.src=e.img;
-//     div.appendChild(photo)
-//     div.appendChild(h2)
-//     div.appendChild(ingredients)
-//     div.appendChild(price);
-
-    
-//   });
-// }
-
-function prueba(){
+function sectionBreakFast(){
   const cardSelector = document.getElementById("card-selector");
       breakfast.forEach(result => {
         console.log(result);
@@ -51,10 +31,5 @@ function prueba(){
       });
 }
 
-                  // <div class="card mb-3">
-                  //   <div class="card-body">
-let loader = document.querySelector(".loader");
-window.addEventListener("load", ()=>{
-    loader.classList.toggle("loader2")
-});
+
 
