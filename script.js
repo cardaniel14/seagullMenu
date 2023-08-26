@@ -9,23 +9,36 @@ fetch('menu.json')
   .then(response => response.json())
   .then(data => {
     dataJson = data;
+    
+    
+    condicional();
+    sectionBreakFast();
+    // sectionLunch();
+    // sectionDesserts();
+
+    
+  })
+  .catch(error => console.error('Error al cargar el JSON:', error));
+
+  function condicional(){
     if (window.location.pathname === "/lunch.html") {
       sectionLunch()
-    } else if (window.location.pathname === "/breakfast.html") {
+    } 
+    if (window.location.pathname === "/breakfast.html") {
       sectionBreakFast();
-    } else if (window.location.pathname === "/desserts.html") {
+    } 
+    if (window.location.pathname === "/desserts.html") {
       sectionDesserts();
     }
-
-    sectionBreakFast();
-    sectionLunch();
-    sectionDesserts();
-  })
+  }
 
   function sectionBreakFast() {
+    console.log(dataJson)
     const cardSelector = document.getElementById("card-selector");
+    
     dataJson[0].forEach(result => {
       let arr = result.breakfast
+      // console.log(result)
       arr.forEach(result => {
         let card = `
                         <img class="photoPlate mx-auto d-block" src="${result.img}">
