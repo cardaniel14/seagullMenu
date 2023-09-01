@@ -35,6 +35,9 @@ function condicional() {
   if (window.location.pathname === "/desserts.html") {
     sectionDesserts();
   }
+  if (window.location.pathname === "/drinks.html") {
+    sectionDrinks();
+  }
 }
 
 function sectionBreakFast() {
@@ -101,8 +104,14 @@ function sectionDesserts() {
   });
 }
 
-
-
+function sectionDrinks(){
+  dataJson[3].forEach(e=>{
+    let drinks = e.drinks[0].hotDrinks
+    drinks.forEach((e)=>{
+      console.log(e.name)
+    })
+  })
+}
 
 
 
