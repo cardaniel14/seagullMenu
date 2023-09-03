@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block cotent %}
+
+  <div class="loader">
+    <img src="{% static 'img/lunchLoader.jpg' %}" alt="loader" style="width: 150px; border-radius: 100px;">
+  </div>
+  <main>
+  <p class="text-center text-black mt-3 words fw-bold">"All of our dishes are made with patience, love and creativity"</p>
+  <div class="container mt-5">
+    <div id="card-lunch" class="row">   
+      <script>
+        sectionLunch();
+      </script>       
+    </div>       
+  </div>
+  </main>
+  
+{% endblock cotent %}
