@@ -1,0 +1,337 @@
+[
+    [
+        {
+            "breakfast": [
+                {
+                    "name": "Salmon Breeze",
+                    "ingredients": "Brioche bread with smoked salmon, cream cheese with dill, cucumber, red onion, spinach",
+                    "price": 8.50,
+                    "img": "imagenes/salmon.jpg"
+                },
+                {
+                    "name": "Smoothie Bowl",
+                    "ingredients": "Açaí and banana puré, homemade granola, fruits, coconut chips and chia",
+                    "price": 8.50,
+                    "img": "imagenes/smoothie.jpg"
+                },
+                {
+                    "name": "Fritters & Smashed",
+                    "ingredients": "Poached egg, cheesy corn fritters, beet hummus, sweet chili sauce",
+                    "price": 10,
+                    "img": "imagenes/fritters.jpg"
+                },
+                {
+                    "name": "Avocado Toast",
+                    "ingredients": "Toast with avocado with veggie zucchini sauce, feta cheese, nuts and salad",
+                    "price": 9,
+                    "img": "imagenes/avotoast.jpg"
+                },
+                {
+                    "name": "Breakfast Burger",
+                    "ingredients": "Brioche bun, scrambled eggs, bacon, cheese, caramelized onion, tomato, avocado, cheese sauce",
+                    "price": 10,
+                    "img": "imagenes/bb.jpg"
+                },
+                {
+                    "name": "Salty Pancakes",
+                    "ingredients": "Poached egg, pancakes, smashed avocado, asparagus and cheese sauce",
+                    "price": 10,
+                    "img": "imagenes/salty.jpg"
+                },
+                {
+                    "name": "Jesus Mushrooms",
+                    "ingredients": "French toast, poached eggs, fried mushrooms with onion, sun dried tomato, mushroom creamy sauce and dijon sauce",
+                    "price": 10,
+                    "img": "imagenes/jesus.jpg"
+                },
+                {
+                    "name": "Holy Tortilla",
+                    "ingredients": "Scrambled eggs with potatoes, bacon or mushrooms, red onion, avocado sauce, smoked paprika, coriander",
+                    "price": 9,
+                    "img": "imagenes/tortila.jpg"
+                },
+                {
+                    "name": "Friday Morning",
+                    "ingredients": "Scrambled eggs, french toast, bacon or halloumi cheese, avocado, marinated onion, granola + yogurt on the side",
+                    "price": 12.5,
+                    "img": "imagenes/fm.jpg"
+                },
+                {
+                    "name": "Hey Salmon!",
+                    "ingredients": "Poached eggs, smoked salmon, avocado, cheese sauce, avocado and yogurt sauce, marinated onion",
+                    "price": 13,
+                    "img": "imagenes/fritters.jpg"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "lunch": [
+                {
+                    "name": "Mac & Cheese",
+                    "ingredients": "Pasta with cheese, onion and cream",
+                    "price": 7,
+                    "img": "imagenes/mcncheese.jpg"        
+                },
+                {
+                    "name": "Crispy Hashbrowns",
+                    "ingredients": "Sweet potato hashbrowns with parmesan, avocado yogurt sauce, chili oil, coriander, sesame seeds",
+                    "price": 8.50,
+                    "img": "imagenes/hashbrowns.jpg"
+                },
+                {
+                    "name": "Chicken Jerry Salad",
+                    "ingredients": "Spicy chicken, salad mix, mango, avocado, mango dressing, smoked paprika.",
+                    "price": 12,
+                    "img": "imagenes/chickensalad.jpg"
+                },
+                {
+                    "name": "Fish & Chips",
+                    "ingredients": "Fried fish with tartar sauce, french fries, lemon, marinated onion, pickles, sweet chili sauce",
+                    "price": 12,
+                    "img": "imagenes/fishnchips.jpg"
+                },
+                {
+                    "name": "Salmon Tom Salad",
+                    "ingredients": "Brioche bun, scrambled eggs, bacon, cheese, caramelized onion, tomato, avocado, cheese sauce",
+                    "price": 10,
+                    "img": "imagenes/salmonsalad.jpg"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "desserts": [
+                {
+                    "name": "Syrniki",
+                    "ingredients": "Cottage cheese pancakes with homeda matcha ganache, raspberry sauce and pistachio dust",
+                    "price": 10,
+                    "img": "imagenes/syrniki.jpg"        
+                },
+                {
+                    "name": "Spice Girls Pancakes",
+                    "ingredients": "Pancakes with homemade nuts cream, blueberry, blackberry and banana",
+                    "price": 8.50,
+                    "img": "imagenes/spiceGirls.jpg"
+                },
+                {
+                    "name": "Pancakes For Emma",
+                    "ingredients": "Homemade pancakes with chocolate cream, strawberry, granola dust, corn syrup, nuts, meringue and banana",
+                    "price": 8.5,
+                    "img": "imagenes/emmaPancakes.jpg"
+                },
+                {
+                    "name": "French Mirage",
+                    "ingredients": "French toast with caramelized pineapple, vanilla ice cream, pecan nuts, granola dust and corn syrup",
+                    "price": 7.5,
+                    "img": "imagenes/frenchMirage.jpg"
+                }                
+            ]
+        }
+    ],
+    [
+        {
+            "drinks": [
+                {
+                    "hotDrinks":
+                    [
+                        {
+                            "name": "Espresso",
+                            "price": 1.2
+                        },
+                        {
+                            "name": "Espresso Macchiatto",
+                            "price": 1.3
+                        },
+                        {
+                            "name": "Double Espresso",
+                            "price": 2.4
+                        },
+                        {
+                            "name": "Americano",
+                            "price": 2.5
+                        },
+                        {
+                            "name": "Flat White",
+                            "price": 3.5
+                        },
+                        {
+                            "name": "Cappuccino",
+                            "price": 3.5
+                        },
+                        {
+                            "name": "Late",
+                            "price": 3.5
+                        },
+                        {
+                            "name": "Chai Latte",
+                            "price": 5
+                        },
+                        {
+                            "name": "Hot Chocolate",
+                            "price": 4.5
+                        },
+                        {
+                            "name": "Matcha Latte",
+                            "price": 5
+                        },
+                        {
+                            "name": "Organic Tea",
+                            "price": 4
+                        }
+                    ],
+                    "ColdCoffees":
+                    [
+                        {
+                            "name": "Freddo Espresso",
+                            "price": 2.5
+                        },
+                        {
+                            "name": "Freddo Cappuccino",
+                            "price": 4
+                        },
+                        {
+                            "name": "Iced Americano",
+                            "price": 2.5
+                        },
+                        {
+                            "name": "Iced Caramel/Vanilla Latte",
+                            "price": 4
+                        },
+                        {
+                            "name": "Iced Chocolate",
+                            "price": 4.5
+                        },
+                        {
+                            "name": "Iced Matcha Latte",
+                            "price": 5.5
+                        },
+                        {
+                            "name": "Bumble Coffee",
+                            "price": 5
+                        }
+                    ],
+                    "softDrinks":
+                    [
+                        {
+                            "name": "Filtered Water",
+                            "price": 1.5
+                        },
+                        {
+                            "name": "Sparkling Water",
+                            "price": "2/3.5"
+                        },
+                        {
+                            "name": "Coca-cola",
+                            "price": 2.5
+                        },
+                        {
+                            "name": "Kombucha Bouche 0,33",
+                            "price": 5.5
+                        },
+                        {
+                            "name": "Club Mate",
+                            "price": 4.5
+                        },
+                        {
+                            "name": "Charitea",
+                            "price": 5
+                        },
+                        {
+                            "name": "Lemonaid",
+                            "price": 5
+                        },
+                        {
+                            "name": "Wostok Soda",
+                            "price": 4.5
+                        },
+                        {
+                            "name": "Passion Fruit Lemonade",
+                            "price": 5.5
+                        },
+                        {
+                            "name": "Orange Juice",
+                            "price": 3.5
+                        }
+                    ],
+                    "smoothies":
+                    [
+                        {
+                            "name": "Pink Smoothie",
+                            "price": 5.9,
+                            "ingredients": "Strawberry, banana and almond milk"
+                        },
+                        {
+                            "name": "Green Smoothie",
+                            "price": 5.9,
+                            "ingredients": "Baby spinach, pineapple, banana, coconut milk"
+                        },
+                        {
+                            "name": "Yellow Smoothie",
+                            "price": 5.9,
+                            "ingredients": "Mango, banana, chia, almond milk"
+                        }
+                    ],
+                    "wine":
+                    [
+                        {
+                            "name": "White wine, Aphros 2014, Loureiro, Portugal",
+                            "price": "6.5/31"
+                        },
+                        {
+                            "name": "Green Wine, Monologo 2021, Arinto, Portugal",
+                            "price": "5/24"
+                        },
+                        {
+                            "name": "Rose: Thyro 2019, Touriga Nacional, Portugal",
+                            "price": "5/25"
+                        },
+                        {
+                            "name": "Red: Thyro 2021, Touriga nacional e Tinta Roriz, Portugal",
+                            "price": "5/24"
+                        },
+                        {
+                            "name": "Sparkling Wine, Jaume Serra, Spain",
+                            "price": "4/18"
+                        }
+                    ],
+                    "naturalCyder":
+                    [
+                        {
+                            "name": "Cider Diver, Daughter of Madness, Portugal",
+                            "price": "5/24"
+                        },
+                        {
+                            "name": "Sea foam punch, Daughter of madness, Portugal",
+                            "price": "6/29"
+                        }
+                    ],
+                    "beer":
+                    [
+                        {
+                            "name": "Blondie",
+                            "price": 3
+                        },
+                        {
+                            "name": "Frank APA",
+                            "price": 3.5
+                        }
+                    ],
+                    "cocktails":
+                    [
+                        {
+                            "name": "Mimosa",
+                            "price": 6
+                        },
+                        {
+                            "name": "Aperol Spritz",
+                            "price": 8.5
+                        }
+                    ]
+                }         
+            ]
+        }
+    ]
+]
