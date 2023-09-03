@@ -1,9 +1,10 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block content %}
   
   <div class="loader">
-    <img src="./imagenes/drinksloader.jpg" alt="seagullLogo" style="width: 150px; border-radius: 100px;">
+    <img src="{% static 'img/drinksloader.jpg' %}" alt="seagullLogo" style="width: 150px; border-radius: 100px;">
   </div>
   <main>
     <div class="accordion accordion-flush m-3" id="accordionFlush">

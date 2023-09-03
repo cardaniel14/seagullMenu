@@ -1,3 +1,5 @@
+{% load static %}
+
 <footer class="text-center text-lg-start text-dark" style="background-color: brown">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-between p-4 text-white border-top border-bottom">
@@ -64,16 +66,16 @@
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
             
             <p>
-              <a class="" href="https://www.instagram.com/kefi.lisbon/"><img src="./imagenes/kefi.png"
+              <a class="" href="https://www.instagram.com/kefi.lisbon/"><img src="{% static 'img/kefi.png' %}"
                 alt="kefiBistro" class="mx-auto d-block iconsRestaurants"></a>
             </p>
             <p>
               <a class="dropdown-item" href="https://www.instagram.com/heimcafe.lisbon/"><img
-                src="./imagenes/heim.jpg" alt="heim" class="mx-auto d-block iconsRestaurants"></a>
+                src="{% static 'img/heim.jpg' %}" alt="heim" class="mx-auto d-block iconsRestaurants"></a>
             </p>
             <p>
               <a class="" href="https://www.instagram.com/pomme_eatery/"><img
-                src="./imagenes/pomme.jpg" alt="pommeEatery" class="mx-auto d-block  iconsRestaurants"></a></li>
+                src="{% static 'img/pomme.jpg' %}" alt="pommeEatery" class="mx-auto d-block  iconsRestaurants"></a></li>
             </p>       
           </div>
           <!-- Grid column -->

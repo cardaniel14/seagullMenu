@@ -1,9 +1,10 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block cotent %}
 
   <div class="loader">
-    <img src="./imagenes/lunchLoader.jpg" alt="loader" style="width: 150px; border-radius: 100px;">
+    <img src="{% static 'img/lunchLoader.jpg' %}" alt="loader" style="width: 150px; border-radius: 100px;">
   </div>
   <main>
   <p class="text-center text-black mt-3 words fw-bold">"All of our dishes are made with patience, love and creativity"</p>
