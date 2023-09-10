@@ -1,118 +1,75 @@
-let dataJson;// Variable para manipular el Json
-loader();//Invocar funcion loader
-consumirJson()
+loader(); //Invocar funcion loader
 
 function loader() {
   let loader = document.querySelector(".loader");
   window.addEventListener("load", () => {
-    loader.classList.toggle("loader2")
+    loader.classList.toggle("loader2");
   });
 }
 
+import data from "./menu.json" assert { type: "json" };
 
-
-function consumirJson() {
-  fetch('menu.json')
-    .then(response => response.json())
-    .then(data => {
-      dataJson = data;
-      condicional();
-    })
-    .catch(error => console.error('Error al cargar archivo', error));
-}
-
-
-
-function condicional() {
-  if (window.location.pathname === "/breakfast.html") {
-    sectionBreakFast();
-  }
-
-  if (window.location.pathname === "/lunch.html") {
-    sectionLunch()
-  }
-
-  if (window.location.pathname === "/desserts.html") {
-    sectionDesserts();
-  }
-  if (window.location.pathname === "/drinks.html") {
-    sectionDrinks();
-  }
-}
-
-function sectionBreakFast() {
+function displayItems(path) {
   const cardSelector = document.getElementById("card-selector");
+  const filtro = data.filter((t) => t.type == path);
+  console.log(filtro);
 
-  dataJson[0].forEach(e => {
-    let arr = e.breakfast;
-    arr.forEach(result => {
-      let card = `
+  filtro.forEach((result) => {
+    let card = `
                         <img class="photoPlate mx-auto d-block" src="${result.img}">
                         <h2 class="plateName">${result.name}</h2>
                         <p class="ingredients text-center">${result.ingredients}</p>
                         <p class="price text-center">${result.price}€</p>
-                        
+
                       `;
 
-      let containerDiv = document.createElement("div");
-      containerDiv.setAttribute("class", "col-sm-6 col-md-4 col-lg-3");
-      containerDiv.innerHTML = card;
-      cardSelector.appendChild(containerDiv);
-    })
+    let containerDiv = document.createElement("div");
+    containerDiv.setAttribute("class", "col-sm-6 col-md-4 col-lg-3");
+    containerDiv.innerHTML = card;
+    cardSelector.appendChild(containerDiv);
   });
 }
 
-function sectionLunch() {
-  const cardSelector = document.getElementById("card-lunch");
-  dataJson[1].forEach(e => {
-    let arr = e.lunch
-    arr.forEach(result => {
-      let card = `
-                        <img class="photoPlate mx-auto d-block" src="${result.img}">
-                        <h2 class="plateName">${result.name}</h2>
-                        <p class="ingredients text-center">${result.ingredients}</p>
-                        <p class="price text-center">${result.price}€</p>
+let path = window.location.pathname;
+if (path == "/breakfast.html") {
+  displayItems("breakfast");
+}
+
+if (path == "/lunch.html") {
+  displayItems("lunch");
+}
+if (path == "/desserts.html") {
+  displayItems("desserts");
+}
+
+function displayDrinks(itemType, index) {
+  const drinkId = itemType;
+  const cardSelector = document.getElementsByClassName("accordion-body")[index];
+  console.dir(cardSelector);
+  const filtro = data.filter((t) => t.type == drinkId);
+  console.log(filtro);
+
+  filtro.forEach((result) => {
+    let card = `
                         
+                        <p class="ingredients text-center">${result.name}: ${result.price}€</p>
+
                       `;
 
-      let containerDiv = document.createElement("div");
-      containerDiv.setAttribute("class", "col-sm-6 col-md-4 col-lg-3");
-      containerDiv.innerHTML = card;
-      cardSelector.appendChild(containerDiv);
-    })
+    let containerDiv = document.createElement("div");
+    containerDiv.setAttribute(
+      "class",
+      "col-sm-6 col-md-4 col-lg-3 text-center"
+    );
+    containerDiv.innerHTML = card;
+    cardSelector.appendChild(containerDiv);
   });
 }
-
-function sectionDesserts() {
-  const cardSelector = document.getElementById("card-desserts");
-  dataJson[2].forEach(e => {
-    let arr = e.desserts
-    arr.forEach(result => {
-      let card = `
-                        <img class="photoPlate mx-auto d-block" src="${result.img}">
-                        <h2 class="plateName">${result.name}</h2>
-                        <p class="ingredients text-center">${result.ingredients}</p>
-                        <p class="price text-center">${result.price}€</p>
-                        
-                      `;
-
-      let containerDiv = document.createElement("div"); 
-      containerDiv.setAttribute("class", "col-sm-6 col-md-4 col-lg-3"); 
-      containerDiv.innerHTML = card;
-      cardSelector.appendChild(containerDiv);
-    })
-  });
-}
-
-function sectionDrinks(){
-  dataJson[3].forEach(e=>{
-    let drinks = e.drinks[0].hotDrinks
-    drinks.forEach((e)=>{
-      console.log(e.name)
-    })
-  })
-}
-
-
-
-
+displayDrinks("hotDrinks", 0);
+displayDrinks("coldCoffees", 1);
+displayDrinks("softDrinks", 2);
+displayDrinks("smoothies", 3);
+displayDrinks("wine", 4);
+displayDrinks("naturalCyder", 5);
+displayDrinks("beer", 6);
+displayDrinks("colcktails", 7);
