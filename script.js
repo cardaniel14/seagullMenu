@@ -9,10 +9,10 @@ function loader() {
 
 import data from "./menu.json" assert { type: "json" };
 
-function displayItems(path) {
+export function displayItems(path) {
   const cardSelector = document.getElementById("card-selector");
   const filtro = data.filter((t) => t.type == path);
-  console.log(filtro);
+  //console.log(filtro);
 
   filtro.forEach((result) => {
     let card = `
@@ -45,9 +45,9 @@ if (path == "/desserts.html") {
 function displayDrinks(itemType, index) {
   const drinkId = itemType;
   const cardSelector = document.getElementsByClassName("accordion-body")[index];
-  console.dir(cardSelector);
+  //console.dir(cardSelector);
   const filtro = data.filter((t) => t.type == drinkId);
-  console.log(filtro);
+  //console.log(filtro);
 
   filtro.forEach((result) => {
     let card = `
@@ -65,11 +65,22 @@ function displayDrinks(itemType, index) {
     cardSelector.appendChild(containerDiv);
   });
 }
-displayDrinks("hotDrinks", 0);
-displayDrinks("coldCoffees", 1);
-displayDrinks("softDrinks", 2);
-displayDrinks("smoothies", 3);
-displayDrinks("wine", 4);
-displayDrinks("naturalCyder", 5);
-displayDrinks("beer", 6);
-displayDrinks("colcktails", 7);
+
+function displayFilteredDrinks() {
+  const drinkTypes = [
+    "hotDrinks",
+    "coldCoffees",
+    "softDrinks",
+    "smoothies",
+    "wine",
+    "naturalCyder",
+    "beer",
+    "cocktails",
+  ];
+
+  for (let i = 0; i < drinkTypes.length; i++) {
+    displayDrinks(drinkTypes[i], i);
+  }
+}
+
+displayFilteredDrinks();
