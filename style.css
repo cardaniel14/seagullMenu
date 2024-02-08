@@ -13,11 +13,18 @@ body {
 
 #navigation {
   background-color: brown;
+  border: solid 1px white;
 }
 
 .burgerMenu {
   color: blanchedalmond;
   font-size: 40px;
+}
+
+.ambienteSeagull {
+  width: 70%;
+  height: 700px;
+  margin: auto;
 }
 
 #navLink {
@@ -73,6 +80,7 @@ body {
 .socialNetwork {
   font-size: 20px;
   color: #ffffff;
+  text-decoration: none;
 }
 
 #sliderImg {
@@ -85,6 +93,11 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
   }
+}
+
+.button {
+  width: 100px;
+  color: white;
 }
 
 .words {
@@ -122,4 +135,47 @@ body {
 
 footer {
   background-color: brown;
+}
+
+.carousel {
+  height: 500px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+#sliderImg {
+  height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .carousel {
+    height: 400px;
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container-carousel {
+    display: flex;
+  }
+
+  .titulos-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+
+  .titulos-index h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
 }

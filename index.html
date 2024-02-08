@@ -14,13 +14,13 @@
 </head>
 
 <body>
-  <nav id="navigation" class="navbar navbar-expand-lg" >
+  <nav id="navigation" class="navbar navbar-expand-lg" style="background-color:brown">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://www.instagram.com/seagullmethodcafe/" target="_blank"><img
           src="./imagenes/SEAGULL.jpg" class="iconsRestaurants" alt="logoSeagull"></a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars burgerMenu" ></i>
+        <i class="fa-solid fa-bars burgerMenu"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -58,35 +58,17 @@
     </div>
   </nav>
   <div class="loader">
-    <img class="imageLoader" src="./imagenes/seagullLogo.jpg" alt="seagullLogo" >
+    <img class="imageLoader" src="./imagenes/seagullLogo.jpg" alt="seagullLogo">
   </div>
   <main>
-    <div class="mt-1">
-    <div id="carouselExample" class="carousel slide " data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img src="./imagenes/amb1.jpg" id="sliderImg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./imagenes/amb3.jpg" id="sliderImg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./imagenes/amb2.jpg" id="sliderImg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./imagenes/comidacarousel.jpg" id="sliderImg" class="d-block w-100" alt="...">
-        </div>
+    <div>
+      <img class="ambienteSeagull" src="./imagenes/amb1.jpg" alt="SeagullMethod">
+
+      <div class="titulos-index">
+        <h1 class="text-center mt-3">Welcome to Seagull Method Cafe</h1>
+        <p class="text-center">"Let us always meet each other with smile, for the smile is the beginning of love"</p>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    </div>    
   </main>
 
   <footer class="text-center text-lg-start text-dark" style="background-color: brown">
@@ -113,7 +95,7 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section >
+    <section>
       <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
@@ -124,9 +106,10 @@
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
             <br>
             <div class="ratio ratio-16x9">
-            <iframe class="text-center ratio-item" style="border-radius: 20px; height: 250px;"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.138172384528!2d-9.152224584823148!3d38.714636579599194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19333a2feac5bf%3A0x428bc0902a2efc3e!2sSeagull%20Method%20cafe%20%E2%80%A2%20Brunch%20cafe!5e0!3m2!1ses-419!2spt!4v1680201202748!5m2!1ses-419!2spt"
-              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+              <iframe class="text-center ratio-item" style="border-radius: 20px; height: 250px;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.138172384528!2d-9.152224584823148!3d38.714636579599194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19333a2feac5bf%3A0x428bc0902a2efc3e!2sSeagull%20Method%20cafe%20%E2%80%A2%20Brunch%20cafe!5e0!3m2!1ses-419!2spt!4v1680201202748!5m2!1ses-419!2spt"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>"
             </div>
           </div>
           <!-- Grid column -->
@@ -136,36 +119,38 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-semibold fs-5 fst-italic" style="color: blanchedalmond;">Useful Info</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-             <p class="text-white fw-medium">
-              <i class="fa-solid fa-address-book" style="color: #ffffff;"></i> We don't accept reservations on weekends or holidays!
+            <p class="text-white fw-medium">
+              <i class="fa-solid fa-address-book" style="color: #ffffff;"></i> We don't accept reservations on weekends
+              or holidays!
             </p>
             <p class="text-white fw-medium">
               <i class="fa-solid fa-utensils" style="color: #ffffff;"></i> Our kitchen closes at 17:30hs
-            </p>            
+            </p>
             <p class="text-white fw-medium">
               <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i> We're open from 9hs to 18hs Everyday
-            </p>            
+            </p>
           </div>
           <!-- Grid column -->
 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-            <h6 class="text-uppercase fw-semibold fs-5 fst-italic" style="color: blanchedalmond;">Still hungry? Check this:</h6>
+            <h6 class="text-uppercase fw-semibold fs-5 fst-italic" style="color: blanchedalmond;">Still hungry? Check
+              this:</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            
+
             <p>
-              <a class="" href="https://www.instagram.com/kefi.lisbon/"><img src="./imagenes/kefi.png"
-                alt="kefiBistro" class="mx-auto d-block iconsRestaurants"></a>
+              <a class="" href="https://www.instagram.com/kefi.lisbon/"><img src="./imagenes/kefi.png" alt="kefiBistro"
+                  class="mx-auto d-block iconsRestaurants"></a>
             </p>
             <p>
-              <a class="dropdown-item" href="https://www.instagram.com/heimcafe.lisbon/"><img
-                src="./imagenes/heim.jpg" alt="heim" class="mx-auto d-block iconsRestaurants"></a>
+              <a class="dropdown-item" href="https://www.instagram.com/heimcafe.lisbon/"><img src="./imagenes/heim.jpg"
+                  alt="heim" class="mx-auto d-block iconsRestaurants"></a>
             </p>
             <p>
-              <a class="" href="https://www.instagram.com/pomme_eatery/"><img
-                src="./imagenes/pomme.jpg" alt="pommeEatery" class="mx-auto d-block  iconsRestaurants"></a></li>
-            </p>       
+              <a class="" href="https://www.instagram.com/pomme_eatery/"><img src="./imagenes/pomme.jpg"
+                  alt="pommeEatery" class="mx-auto d-block  iconsRestaurants"></a></li>
+            </p>
           </div>
           <!-- Grid column -->
 

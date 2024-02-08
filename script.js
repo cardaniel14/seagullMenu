@@ -1,4 +1,5 @@
 loader(); //Invocar funcion loader
+goUp();
 
 function loader() {
   let loader = document.querySelector(".loader");
@@ -7,12 +8,23 @@ function loader() {
   });
 }
 
-import data from "./menu.json" assert { type: "json" };
+const boton = document.querySelector(".loader");
 
-export function displayItems(path) {
+function goUp() {
+  const btnUp = document.getElementById("btn-up");
+  btnUp.addEventListener("click", () =>
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  );
+}
+
+async function displayItems(path) {
+  const response = await fetch("./menu.json");
+  const data = await response.json();
   const cardSelector = document.getElementById("card-selector");
   const filtro = data.filter((t) => t.type == path);
-  //console.log(filtro);
 
   filtro.forEach((result) => {
     let card = `
@@ -31,6 +43,7 @@ export function displayItems(path) {
 }
 
 let path = window.location.pathname;
+console.log(path);
 if (path == "/breakfast.html") {
   displayItems("breakfast");
 }
@@ -42,25 +55,25 @@ if (path == "/desserts.html") {
   displayItems("desserts");
 }
 
-function displayDrinks(itemType, index) {
+async function displayDrinks(itemType, index) {
+  const response = await fetch("./menu.json");
+  const data = await response.json();
   const drinkId = itemType;
   const cardSelector = document.getElementsByClassName("accordion-body")[index];
-  //console.dir(cardSelector);
+  cardSelector.style.background = "blanchedalmond";
   const filtro = data.filter((t) => t.type == drinkId);
-  //console.log(filtro);
 
   filtro.forEach((result) => {
-    let card = `
-                        
+    let card = `                        
                         <p class="ingredients text-center">${result.name}: ${result.price}€</p>
-
                       `;
 
     let containerDiv = document.createElement("div");
     containerDiv.setAttribute(
       "class",
-      "col-sm-6 col-md-4 col-lg-3 text-center"
+      "d-flex flex-column justify-content-center align-items-center"
     );
+
     containerDiv.innerHTML = card;
     cardSelector.appendChild(containerDiv);
   });
