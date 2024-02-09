@@ -8,12 +8,6 @@ function loader() {
   });
 }
 
-const boton = document.querySelector(".loader");
-
-// window.addEventListener("load", function () {
-//   document.querySelector(".aparecer").classList.add("show");
-// });
-
 function goUp() {
   const btnUp = document.getElementById("btn-up");
   btnUp.addEventListener("click", () =>
@@ -22,41 +16,6 @@ function goUp() {
       behavior: "smooth",
     })
   );
-}
-
-async function displayItems(path) {
-  const response = await fetch("./menu.json");
-  const data = await response.json();
-  const cardSelector = document.getElementById("card-selector");
-  const filtro = data.filter((t) => t.type == path);
-
-  filtro.forEach((result) => {
-    let card = `
-                        <img class="photoPlate mx-auto d-block" src="${result.img}">
-                        <h2 class="plateName">${result.name}</h2>
-                        <p class="ingredients text-center">${result.ingredients}</p>
-                        <p class="price text-center">${result.price}€</p>
-
-                      `;
-
-    let containerDiv = document.createElement("div");
-    containerDiv.setAttribute("class", "col-sm-6 col-md-4 col-lg-3");
-    containerDiv.innerHTML = card;
-    cardSelector.appendChild(containerDiv);
-  });
-}
-
-let path = window.location.pathname;
-console.log(path);
-if (path == "/breakfast.html") {
-  displayItems("breakfast");
-}
-
-if (path == "/lunch.html") {
-  displayItems("lunch");
-}
-if (path == "/desserts.html") {
-  displayItems("desserts");
 }
 
 async function displayDrinks(itemType, index) {
