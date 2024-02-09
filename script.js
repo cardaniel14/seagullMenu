@@ -10,6 +10,10 @@ function loader() {
 
 const boton = document.querySelector(".loader");
 
+// window.addEventListener("load", function () {
+//   document.querySelector(".aparecer").classList.add("show");
+// });
+
 function goUp() {
   const btnUp = document.getElementById("btn-up");
   btnUp.addEventListener("click", () =>

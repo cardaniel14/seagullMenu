@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto+Condensed&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +9,18 @@
 
 body {
   background-color: blanchedalmond !important;
+}
+
+.mainTitle {
+  font-family: "Protest Riot", cursive;
+  color: brown;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.description {
+  color: #fff7d3;
+  font-size: 25px;
 }
 
 #navigation {
@@ -22,7 +34,7 @@ body {
 }
 
 .ambienteSeagull {
-  width: 70%;
+  width: 100%;
   height: 700px;
   margin: auto;
 }
@@ -177,5 +189,27 @@ footer {
   .titulos-index h1 {
     font-size: 50px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ambienteSeagull {
+    height: 400px;
+    width: 100%;
+    transition: fadein 2s ease forwards;
+  }
+
+  .hide {
+    opacity: 0;
+    animation: fadein 6s ease forwards;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }
