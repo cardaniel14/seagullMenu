@@ -1,6 +1,13 @@
 loader(); //Invocar funcion loader
 goUp();
 
+// const typed = new Typed("#typed", {
+//   strings: ["Front-End Developer"],
+//   typeSpeed: 100,
+//   cursorBlinking: false,
+//   loop: false,
+// });
+
 function loader() {
   let loader = document.querySelector(".loader");
   window.addEventListener("load", () => {
