@@ -15,7 +15,7 @@ body {
   font-family: "Protest Riot", cursive;
   color: brown;
   font-size: 35px;
-  font-weight: bolder;
+  font-weight: lighter;
 }
 
 .description {
@@ -147,22 +147,6 @@ body {
 
 footer {
   background-color: brown;
-}
-
-.carousel {
-  height: 500px;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  height: 100%;
-}
-
-#sliderImg {
-  height: 100%;
 }
 
 @media screen and (max-width: 550px) {
