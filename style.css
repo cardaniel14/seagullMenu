@@ -12,10 +12,9 @@ body {
 }
 
 .mainTitle {
-  font-family: "Protest Riot", cursive;
+  font-family: "lato", sans-serif;
   color: brown;
   font-size: 35px;
-  font-weight: lighter;
 }
 
 .description {
